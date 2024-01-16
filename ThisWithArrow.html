@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         const student={
+//     name:"aman",
+//     marks:95,
+//     prop:this
+// }
+
+
+const student={
+    name:"Aman",
+    marks:95,
+    props:this,
+    getName:function(){
+        console.log(this);
+       return this.name;
+    },
+    getMarks:()=>{
+        console.log(this);
+        return this.marks;
+    }
+}
+
+console.log("------------");
+let num=()=>{
+    let square=Math.pow(2,2)
+    console.log(square);
+}
+num()
+
+
+  let id=  setInterval(() => {
+        console.log("hello world");
+    }, 2000);
+
+setInterval(() => {
+    clearInterval(id)
+}, 10000);
+    </script>
+</body>
+</html>

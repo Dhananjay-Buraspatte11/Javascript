@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+
+</head>
+
+<body>
+    <h1>To do App</h1>
+    <h3>Enter "list" to show all tasks </h3>
+    <h3>Enter "add" to Add a tasks </h3>
+    <h3>Enter "delete" to Remove a tasks </h3>
+    <h3>Enter "Quit" to Quit todo</h3>
+
+    <script>
+        let todo = [];
+        let req = prompt("Please Enter Your Request");
+        while (true) {
+            if (req == "quit") {
+                console.log("Quitting the app");
+                break;
+            }
+            if (req == "list") {
+                console.log("-----------------");
+              for (let i = 0; i < todo.length; i++) {
+                console.log(i,todo[i]);
+               }
+                console.log("-----------------");
+            }
+            else if (req=='add') {
+              let task=  prompt("Please enter the task you want to add")
+              todo.push(task)
+              console.log("task added");
+            }
+            else if(req=='delete'){
+                let idx=prompt("Please enter the task index")
+                todo.slice(idx,1)
+                console.log("task deleted");
+            }
+            else{
+                console.log("Wrong request");
+            }
+          let req=prompt("Please Enter Your Request")
+            // else if ((req=='delete')) {
+                
+            // }
+        }
+    </script>
+</body>
+
+</html>

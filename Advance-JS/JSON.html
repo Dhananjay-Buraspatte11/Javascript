@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jsonResponse='{"fact":"All cats need taurine in their diet to avoid blindness. Cats must also have fat in their diet as they are unable to produce it on their own.","length":140}';
+       let validRes=JSON.parse(jsonResponse)
+       console.log(validRes.fact);
+
+       console.log("------------");
+       let student={
+        name:"Rahul",
+        marks:95,
+        age:24
+       }
+       let res=JSON.stringify(student);
+       console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi</h1>
+    <script>
+        
+         let url="https://catfact.ninja/fact";
+        async function getdata()
+         {
+           try {
+            let res=await fetch(url); 
+            let data=res.json();
+            console.log(data);
+            let res1=await fetch(url);
+            let data1=await res1.json();
+            console.log(data1);
+           } catch (error) {
+            console.log(error);
+           }
+         }
+    </script>
+</body>
+</html>

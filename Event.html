@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Event.js">
+</head>
+<body>
+    <button>Click Me1</button>
+    <button>Click Me2</button>
+    <button>Click Me3</button>
+    <button>Click Me4</button>
+    <button>Click Me5</button>
+
+    <script>
+        let btn=document.querySelectorAll('button')
+        // for (const btns of btn) {
+        //     btns.onclick=sayHello;
+        //     btns.onmouseenter=function()
+        //     {
+        //         console.log("hi");
+        //     }
+        // }
+        for (const btns of btn) {
+        //   btns.addEventListener("click",sayHello);
+        //   btns.addEventListener("click",sayName)
+        btns.addEventListener("dblclick",function(){
+            console.log("Hi");
+        })
+        }
+       
+       
+        function sayHello()
+        {
+           alert("Hi")
+        }
+        function sayName()
+        {
+            alert("Hello")
+        }
+      
+    </script>
+</body>
+</html>
